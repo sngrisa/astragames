@@ -7,6 +7,9 @@ import { ImgComponent } from './about/img/img.component';
 import { GridCardsComponent } from './about/grid-cards/grid-cards.component';
 import { MainInfoComponent } from './about/main-info/main-info.component';
 import { ContactComponent } from './about/contact/contact.component';
+import { RegisterComponent } from './register/register.component';
+import { RegisterFormComponent } from './register/register-form/register-form.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -18,9 +21,13 @@ import { ContactComponent } from './about/contact/contact.component';
     GridCardsComponent,
     MainInfoComponent,
     ContactComponent,
+    RegisterComponent,
+    RegisterFormComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers:[
     GamesService

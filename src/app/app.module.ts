@@ -11,6 +11,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { LoginModule } from './login/login.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialAngularModule } from './material-angular.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -27,7 +28,9 @@ import { MaterialAngularModule } from './material-angular.module';
     LoginModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MaterialAngularModule
+    MaterialAngularModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
