@@ -15,28 +15,25 @@ export class RegisterFormComponent {
 
   formAccount: FormGroup = this.fb.group(
     {
-      name: ['', [Validators.minLength(5), Validators.required],],
-      lastName: ['', [Validators.minLength(5), Validators.required],],
+      username: ['', [Validators.minLength(5), Validators.required],],
       email: ['', [Validators.email, Validators.required, Validators.minLength(6)],],
       password: ['', [Validators.minLength(6), Validators.required],],
-      confirmPassword: ['', [Validators.minLength(5), Validators.required],]
     }
   );
 
   submitAccount = () => {
-    if(this.formAccount.invalid){
+    if (this.formAccount.invalid) {
       this.formAccount.markAllAsTouched();
       return;
     }
-    const valueAccount = {...this.formAccount.value}; 
+    const valueAccount = { ...this.formAccount.value };
     this.user = valueAccount;
+    console.log(this.user);
     this.formAccount.reset(
       {
-        name: "",
-        lastName: "",
+        username: "",
         email: "",
         password: "",
-        confirmPassword: '',
       }
     )
     return this.user;

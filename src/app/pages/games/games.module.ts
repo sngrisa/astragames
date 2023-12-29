@@ -4,6 +4,8 @@ import { GameComponent } from './game/game.component';
 import { GamesComponent } from './games.component';
 import { GamescardsComponent } from './gamescards/gamescards.component';
 import { CardComponent } from './gamescards/card/card.component';
+import { GamesRoutingModule } from './games-routing.module';
+import { GameInfoComponent } from './game/game-info/game-info.component';
 
 
 
@@ -12,10 +14,12 @@ import { CardComponent } from './gamescards/card/card.component';
     GameComponent,
     GamesComponent,
     GamescardsComponent,
-    CardComponent
+    CardComponent,
+    GameInfoComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    GamesRoutingModule
   ],
   exports:
   [

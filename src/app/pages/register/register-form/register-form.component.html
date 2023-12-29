@@ -1,68 +1,20 @@
-<form class="px-8 pt-6 pb-8 mb-4 rounded bg-gray-900 text-white" autocomplete="off" autocapitalize="off"
-    [formGroup]="formAccount" (ngSubmit)="submitAccount()">
-    <h3 class="pt-4 text-2xl text-center"><i class="bi bi-info-circle-fill"></i> Crear una cuenta en Astra Games</h3>
-    <div class="mb-4">
-        <label class="block mb-2 text-sm font-bold text-gray-700" for="firstName">
-            <i class="bi bi-person-lines-fill"></i> Nombre
-        </label>
-        <input
-            class="w-full px-3 py-2 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-            id="firstName" type="text" placeholder="First Name" formControlName="name" />
-        <div class="bg-red-100 border-l-4 border-red-500 text-red-700 p-4 mt-4" role="alert" *ngIf="getErrors('name')">
-            <p>El nombre no puede tener menos de 6 digitos o es incorrecto !!!!</p>
-        </div>
+<form autocapitalize="off" autocomplete="off" [formGroup]="formAccount" (ngSubmit)="submitAccount()">
+    <div class="text-center items-center bg-red-500 text-white text-sm font-bold px-4 py-3 error" role="alert"
+        *ngIf="getErrors('email')">
+        <span><i class="bi bi-bug-fill"></i> El email es incorrecto o no esta disponible, ingrese un email correcto!!!! <i class="bi bi-bug-fill"></i></span>
     </div>
-    <div class="mb-4">
-        <label class="block mb-2 text-sm font-bold text-gray-700" for="lastName">
-            <i class="bi bi-person-lines-fill"></i> Apellido
-        </label>
-        <input
-            class="w-full px-3 py-2 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-            id="lastName" type="text" placeholder="Last Name" formControlName="lastName" />
-        <div class="bg-red-100 border-l-4 border-red-500 text-red-700 p-4 mt-4" role="alert" *ngIf="getErrors('lastName')">
-            <p>El apellido no puede tener menos de 6 digitos o es incorrecto!!!!</p>
-        </div>
+    <input type="text" name="name" id="name" placeholder="Ingrese su email" required formControlName="email" />
+    <div class="text-center items-center bg-red-500 text-white text-sm font-bold px-4 py-3 mt-3 error" role="alert"
+        *ngIf="getErrors('username')">
+        <span><i class="bi bi-bug-fill"></i> El username es incorrecto o no esta disponible, ingrese un username correcto!!!! <i class="bi bi-bug-fill"></i></span>
     </div>
-    <div class="mb-4">
-        <label class="block mb-2 text-sm font-bold text-gray-700" for="email">
-            <i class="bi bi-envelope-at-fill"></i> Correo
-        </label>
-        <input
-            class="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-            id="email" type="email" placeholder="Ingrese su email" formControlName="email" />
-        <div class="bg-red-100 border-l-4 border-red-500 text-red-700 p-4" role="alert" *ngIf="getErrors('email')">
-            <p> El correo ingresado, es incorrecto, vuelvalo a
-                intentar!!!!</p>
-        </div>
+    <input type="text" name="name" id="name" placeholder="Ingrese un username" formControlName="username" />
+    <div class="text-center items-center bg-red-500 text-white text-sm font-bold px-4 py-3 error" role="alert"
+        *ngIf="getErrors('password')">
+        <span><i class="bi bi-bug-fill"></i> La contraseña no puede tener menos de 6 digitos y no puede ser debil, ingrese una contraseña correcta
+            porfavor!!!! <i class="bi bi-bug-fill"></i></span>
     </div>
-    <div class="mb-4">
-        <label class="block mb-2 text-sm font-bold text-gray-700" for="password">
-            <i class="bi bi-pass-fill"></i> Contraseña
-        </label>
-        <input
-            class="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border border-red-500 rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-            id="password" type="password" placeholder="******************" formControlName="password" />
-        <div class="bg-red-100 border-l-4 border-red-500 text-red-700 p-4" role="alert" *ngIf="getErrors('password')">
-            <p>La contraseña no puede tener menos de 6 digitos!!!!</p>
-        </div>
-    </div>
-    <div class="mb-4">
-        <label class="block mb-2 text-sm font-bold text-gray-700" for="c_password">
-            <i class="bi bi-passport-fill"></i> Confirmar Contraseña
-        </label>
-        <input
-            class="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-            id="c_password" type="password" placeholder="******************" formControlName="confirmPassword" />
-        <div class="bg-red-100 border-l-4 border-red-500 text-red-700 p-4" role="alert"
-            *ngIf="getErrors('confirmPassword')">
-            <p>Porfavor confirme su contraseña!!!!</p>
-        </div>
-    </div>
-    <div class="mb-6 text-center">
-        <button
-            class="w-full px-4 py-2 font-bold text-white bg-gray-800 rounded-full hover:bg-gray-900 focus:outline-none focus:shadow-outline"
-            type="submit">
-            <i class="bi bi-plus-circle-fill"></i> Registrarse en Astra Games
-        </button>
-    </div>
+    <input type="password" name="name" id="name" placeholder="Ingrese una contraseña" formControlName="password" />
+    <p>Al registrarse usted acepta nuestros términos y condiciones.</p>
+    <button class="button-register" type="submit"><i class="bi bi-plus-circle-fill"></i> Registrarse</button>
 </form>
