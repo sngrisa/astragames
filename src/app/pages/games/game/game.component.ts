@@ -19,7 +19,4 @@ export class GameComponent {
     name: "Super Bomberman",
     url: "./assets/bomberman/superbomberman.png",
   }
-
-
-
 }

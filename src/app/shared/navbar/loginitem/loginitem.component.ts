@@ -17,7 +17,7 @@ export class LoginitemComponent {
   openDialog() {
 
     this.dialog.open(LoginComponent, {
-      height: '440px',
+      height: '600px',
       width: '450px',
     });
 }
