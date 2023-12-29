@@ -29,16 +29,27 @@
 .col1 {
     border-radius: 12px;
     height: auto;
-    width: 250px;
+    width: 300px;
     border-radius: 5%;
+    box-shadow: -1px -12px 33px -4px rgba(163, 148, 148, 0.75);
+    -webkit-box-shadow: -1px -12px 33px -4px rgba(163, 148, 148, 0.75);
+    -moz-box-shadow: -1px -12px 33px -4px rgba(163, 148, 148, 0.75);
+    font-weight: 900;
+    cursor: pointer;
 }
 
 .col2 {
     border-radius: 12px;
     height: auto;
-    width: 250px;
+    width: 600px;
     text-align: center;
-    color: whitesmoke;
+    background: rgb(66, 66, 66);
+    background: linear-gradient(90deg, rgba(66, 66, 66, 1) 0%, rgba(41, 44, 61, 1) 48%, rgba(94, 95, 108, 1) 100%);
+    box-shadow: -1px -12px 33px -4px rgba(163, 148, 148, 0.75);
+    -webkit-box-shadow: -1px -12px 33px -4px rgba(163, 148, 148, 0.75);
+    -moz-box-shadow: -1px -12px 33px -4px rgba(163, 148, 148, 0.75);
+    font-weight: 900;
+    cursor: pointer;
 }
 
 .model {

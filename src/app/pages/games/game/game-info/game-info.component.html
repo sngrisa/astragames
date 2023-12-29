@@ -1,14 +1,56 @@
 <div class="container text-center">
     <div class="main">
         <div class="col1"><img
-                src="https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                class="model" alt="can't load image" /></div>
+                [src]="gameDetails.url"
+                class="model" [alt]="gameDetails.name" /></div>
         <div class="col2">
-            <h2 class="name">John Wick</h2>
-            <h4 class="name"> Web Developer</h4><br>
-            <p class="info">I have prior knowledge about front-end development which includes (html, css, javascript,
-                react, tailwind css, material ui and more) for collaboration or project development get in touch with
-                me.</p>
+            <div class="text-white overflow-hidden shadow rounded-lg border">
+                <div class="px-4 py-5 sm:px-6">
+                    <h3 class="text-lg leading-6 font-medium ">
+                        <i class="bi bi-controller"></i> {{gameDetails.name}}
+                    </h3>
+                    <hr>
+                    <p class="mt-1 max-w-2xl text-sm pt-4">
+                        {{gameDetails.desc}}
+                    </p>
+                </div>
+                <div class="border-t border-gray-200 px-4 py-5 sm:p-0">
+                    <dl class="sm:divide-y sm:divide-gray-200">
+                        <div class="py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                            <dt class="text-sm font-medium">
+                                <i class="bi bi-code-square"></i> Desarrollador:
+                            </dt>
+                            <dd class="mt-1 text-sm  sm:mt-0 sm:col-span-2">
+                                {{gameDetails.publisher}}
+                            </dd>
+                        </div>
+                        <div class="py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                            <dt class="text-sm font-medium">
+                                <i class="bi bi-input-cursor"></i> Año de Desarrollo:
+                            </dt>
+                            <dd class="mt-1 text-sm  sm:mt-0 sm:col-span-2">
+                                {{gameDetails.year}}
+                            </dd>
+                        </div>
+                        <div class="py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                            <dt class="text-sm font-medium">
+                                <i class="bi bi-highlighter"></i> Plataforma:
+                            </dt>
+                            <dd class="mt-1 text-sm  sm:mt-0 sm:col-span-2">
+                                {{gameDetails.so}}
+                            </dd>
+                        </div>
+                        <div class="py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                            <dt class="text-sm font-medium">
+                                <i class="bi bi-body-text"></i> Género:
+                            </dt>
+                            <dd class="mt-1 text-sm  sm:mt-0 sm:col-span-2">
+                                {{gameDetails.genre}}
+                            </dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
         </div>
     </div>
 </div>
