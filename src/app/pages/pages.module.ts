@@ -10,6 +10,7 @@ import { ContactComponent } from './about/contact/contact.component';
 import { RegisterComponent } from './register/register.component';
 import { RegisterFormComponent } from './register/register-form/register-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CarrouselComponent } from './home/carrousel/carrousel.component';
 
 
 
@@ -23,6 +24,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ContactComponent,
     RegisterComponent,
     RegisterFormComponent,
+    CarrouselComponent,
   ],
   imports: [
     CommonModule,
