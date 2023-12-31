@@ -11,6 +11,9 @@ import { RegisterComponent } from './register/register.component';
 import { RegisterFormComponent } from './register/register-form/register-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CarrouselComponent } from './home/carrousel/carrousel.component';
+import { LayoutComponent } from './home/layout/layout.component';
+import { NewsComponent } from './home/layout/news/news.component';
+import { NewsletterComponent } from './home/newsletter/newsletter.component';
 
 
 
@@ -25,11 +28,14 @@ import { CarrouselComponent } from './home/carrousel/carrousel.component';
     RegisterComponent,
     RegisterFormComponent,
     CarrouselComponent,
+    LayoutComponent,
+    NewsComponent,
+    NewsletterComponent
   ],
   imports: [
     CommonModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers:[
     GamesService
