@@ -14,6 +14,10 @@ import { CarrouselComponent } from './home/carrousel/carrousel.component';
 import { LayoutComponent } from './home/layout/layout.component';
 import { NewsComponent } from './home/layout/news/news.component';
 import { NewsletterComponent } from './home/newsletter/newsletter.component';
+import { ShopComponent } from './shop/shop.component';
+import { CardsIIComponent } from './shop/grid-cards/cards/cardsII.component';
+import { Carrousel2Component } from "./shop/carrousel2/carrousel2.component";
+import { GridCardsIIComponent } from './shop/grid-cards/grid-cardsII.component';
 
 
 
@@ -30,19 +34,23 @@ import { NewsletterComponent } from './home/newsletter/newsletter.component';
     CarrouselComponent,
     LayoutComponent,
     NewsComponent,
-    NewsletterComponent
+    NewsletterComponent,
+    ShopComponent,
+    CardsIIComponent,
+    Carrousel2Component,
+    GridCardsIIComponent
   ],
   imports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
   ],
-  providers:[
+  providers: [
     GamesService
   ],
   exports: [
     HomeComponent,
     AboutComponent,
-   ]
+  ]
 })
 export class PagesModule { }

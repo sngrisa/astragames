@@ -18,25 +18,25 @@ export class FooterComponent {
   items: menuFooter[] = [
     {
       id: 1,
-      name: "Acerca de Astra Games",
+      name: "Home",
       icon: "bi bi-joystick",
-      url: "/about"
+      url: "/home"
     },
     {
       id: 2,
-      name: "Soporte",
+      name: "About",
       icon: "bi bi-headset",
-      url: "/support"
+      url: "/about"
     },
     {
       id: 3,
-      name: "Comunidad",
+      name: "Games",
       icon: "bi bi-people-fill",
-      url: "/community"
+      url: "/games"
     },
     {
       id: 4,
-      name: "Tienda",
+      name: "Shop",
       icon: "bi bi-bag-fill",
       url: "/shop"
     },

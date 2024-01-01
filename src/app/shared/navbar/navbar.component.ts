@@ -29,6 +29,12 @@ export class NavbarComponent {
         name: "Games",
         url: "/games",
         icon: "bi bi-dice-5-fill"
+      },
+      {
+        id: 4,
+        name: "Shop",
+        url: "/shop",
+        icon: "bi bi-bag-fill"
       }
     ];
 
