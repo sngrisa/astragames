@@ -36,7 +36,9 @@
                             "node_modules/keen-slider/keen-slider.css"
                         ],
                         "scripts": [
-                            "node_modules/keen-slider/keen-slider.js"
+                            "node_modules/keen-slider/keen-slider.js",
+                            "node_modules/swiper/swiper.min.js",
+                            "node_modules/jquery/dist/jquery.min.js"
                         ]
                     },
                     "configurations": {
@@ -104,7 +106,9 @@
                             "node_modules/keen-slider/keen-slider.css"
                         ],
                         "scripts": [
-                            "node_modules/keen-slider/keen-slider.js"
+                            "node_modules/keen-slider/keen-slider.js",
+                            "node_modules/swiper/swiper.min.js",
+                            "node_modules/jquery/dist/jquery.min.js"
                         ]
                     }
                 }

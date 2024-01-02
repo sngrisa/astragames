@@ -1,21 +1,21 @@
-.card{
-    border-radius: 10px; 
-    transition: .5s ease-in-out;
-    &:hover{
-      transform: scale(1.02);
-      transition: .5s ease-in-out;
+.card {
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+    &:hover {
+        transform: scale(1.02);
+        transition: 0.5s ease-in-out;
     }
     cursor: pointer;
 }
 
-.card-body{
+.card-body {
     text-align: center;
-    a{
-      margin: 0px auto;
-      text-decoration: none;      
+    a {
+        margin: 0px auto;
+        text-decoration: none;
     }
     padding-bottom: 5%;
-  }
+}
 
 
 

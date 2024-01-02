@@ -18,6 +18,9 @@ import { ShopComponent } from './shop/shop.component';
 import { CardsIIComponent } from './shop/grid-cards/cards/cardsII.component';
 import { Carrousel2Component } from "./shop/carrousel2/carrousel2.component";
 import { GridCardsIIComponent } from './shop/grid-cards/grid-cardsII.component';
+import { ItemsComponent } from './shop/items/items.component';
+import { ItemComponent } from './shop/items/item/item.component';
+import { ItemsModule } from './shop/items-routing.module';
 
 
 
@@ -38,12 +41,15 @@ import { GridCardsIIComponent } from './shop/grid-cards/grid-cardsII.component';
     ShopComponent,
     CardsIIComponent,
     Carrousel2Component,
-    GridCardsIIComponent
+    GridCardsIIComponent,
+    ItemsComponent,
+    ItemComponent
   ],
   imports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
+    ItemsModule
   ],
   providers: [
     GamesService
