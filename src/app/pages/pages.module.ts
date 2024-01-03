@@ -21,6 +21,8 @@ import { GridCardsIIComponent } from './shop/grid-cards/grid-cardsII.component';
 import { ItemsComponent } from './shop/items/items.component';
 import { ItemComponent } from './shop/items/item/item.component';
 import { ItemsModule } from './shop/items-routing.module';
+import { LoadingComponent } from './loading/loading.component';
+import { PreloadingService } from './services/preloading-service.service';
 
 
 
@@ -43,7 +45,8 @@ import { ItemsModule } from './shop/items-routing.module';
     Carrousel2Component,
     GridCardsIIComponent,
     ItemsComponent,
-    ItemComponent
+    ItemComponent,
+    LoadingComponent
   ],
   imports: [
     CommonModule,
@@ -52,11 +55,13 @@ import { ItemsModule } from './shop/items-routing.module';
     ItemsModule
   ],
   providers: [
-    GamesService
+    GamesService,
+    PreloadingService
   ],
   exports: [
     HomeComponent,
     AboutComponent,
+    LoadingComponent
   ]
 })
 export class PagesModule { }
