@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-item',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./item.component.scss']
 })
 export class ItemComponent {
+
+  constructor(private dialogRef: MatDialog){}
+
+  @Input() item!: any;
+
+  closeItemShop = () => {
+    this.dialogRef.closeAll();
+  }
 
 }

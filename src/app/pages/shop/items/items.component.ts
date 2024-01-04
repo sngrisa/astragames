@@ -1,5 +1,5 @@
-import { AfterViewInit, Component } from '@angular/core';
-import Swiper from 'swiper';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import "jquery";
 
 @Component({
@@ -9,29 +9,26 @@ import "jquery";
 })
 
 
-export class ItemsComponent implements AfterViewInit {
+export class ItemsComponent implements OnInit{
 
-  $!: JQueryStatic;
+  constructor(private activateRouter: ActivatedRoute){}
 
-  ngAfterViewInit(): void {
-    this.$(".size").on("click", () => {
-      this.$(this).toggleClass("focus").siblings().removeClass("focus");
-    });
+  ngOnInit(): void {
+    
   }
 
-  swiper = new Swiper(".swiper", {
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: true
-    },
-    pagination: {
-      el: ".swiper-pagination"
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
-    }
-  });
+  item: any = 
+  {
+    id: 1,
+    name: "Sheep Raider Ship",
+    type: "Ropa",
+    desc: "Remera con el logo de coyote y perro del juego de looney tunes, sheep raider",
+    price: 5000,
+    game: "Sheep Raider",
+    imgUrl: "https://ih1.redbubble.net/image.3248436815.4414/ssrco,slim_fit_t_shirt,womens,heather_grey,front,tall_three_quarter,750x1000.jpg",
+    enchangePrice: 45,
+    stock: true,
+  }
+
 
 }

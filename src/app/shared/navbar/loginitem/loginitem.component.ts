@@ -20,7 +20,7 @@ export class LoginitemComponent {
       height: '600px',
       width: '450px',
     });
-}
+  }
 
 
 }
