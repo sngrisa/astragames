@@ -2,6 +2,7 @@ import { Component, Input } from '@angular/core';
 import { menuItem } from '../menu-items/data/item';
 import { MatDialog } from "@angular/material/dialog";
 import { LoginComponent } from 'src/app/login/login.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-loginitem',
@@ -10,16 +11,13 @@ import { LoginComponent } from 'src/app/login/login.component';
 })
 export class LoginitemComponent {
 
-  constructor(private dialog: MatDialog) { }
+  constructor(private dialog: MatDialog, private router: Router) { }
 
   @Input() item!: menuItem;
+  idUser: string = "";
 
   openDialog() {
-
-    this.dialog.open(LoginComponent, {
-      height: '600px',
-      width: '450px',
-    });
+    return (this.item.url == "/login") ? this.dialog.open(LoginComponent, { height: '600px', width: '450px' }) : this.router.navigateByUrl(`/cart/${this.idUser}`);
   }
 
 

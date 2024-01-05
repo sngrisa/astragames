@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { menuItem } from './menu-items/data/item';
+import { identifierName } from '@angular/compiler';
 
 @Component({
   selector: 'app-navbar',
@@ -38,12 +39,20 @@ export class NavbarComponent {
       }
     ];
 
-  itemLogin: menuItem = {
-    id: 3,
-    name: "Login",
-    url: "/login",
-    icon: "bi bi-person-circle"
-  }
+  itemLogin: menuItem[] = [
+    {
+      id: 1,
+      name: "Login",
+      url: "/login",
+      icon: "bi bi-person-circle"
+    },
+    {
+      id: 2,
+      name: "Carrito",
+      url: "/cart",
+      icon: "bi bi-cart-fill"
+    }
+  ];
 
 
 }

@@ -20,9 +20,11 @@ import { Carrousel2Component } from "./shop/carrousel2/carrousel2.component";
 import { GridCardsIIComponent } from './shop/grid-cards/grid-cardsII.component';
 import { ItemsComponent } from './shop/items/items.component';
 import { ItemComponent } from './shop/items/item/item.component';
-import { ItemsModule } from './shop/items-routing.module';
 import { LoadingComponent } from './loading/loading.component';
 import { PreloadingService } from './services/preloading-service.service';
+import { CartComponent } from './shop/cart/cart.component';
+import { CartDetailsComponent } from './shop/cart/cart-details/cart-details.component';
+import { CartRoutingModule } from "./shop/cart/cart-routing.module";
 
 
 
@@ -46,13 +48,15 @@ import { PreloadingService } from './services/preloading-service.service';
     GridCardsIIComponent,
     ItemsComponent,
     ItemComponent,
-    LoadingComponent
+    LoadingComponent,
+    CartComponent,
+    CartDetailsComponent
   ],
   imports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    ItemsModule
+    CartRoutingModule
   ],
   providers: [
     GamesService,

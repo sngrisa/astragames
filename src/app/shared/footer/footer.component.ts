@@ -19,27 +19,27 @@ export class FooterComponent {
     {
       id: 1,
       name: "Home",
-      icon: "bi bi-joystick",
-      url: "/home"
+      url: "/home",
+      icon: "bi bi-house-door-fill"
     },
     {
       id: 2,
       name: "About",
-      icon: "bi bi-headset",
-      url: "/about"
+      url: "/about",
+      icon: "bi bi-book-fill"
     },
     {
       id: 3,
       name: "Games",
-      icon: "bi bi-people-fill",
-      url: "/games"
+      url: "/games",
+      icon: "bi bi-dice-5-fill"
     },
     {
       id: 4,
       name: "Shop",
-      icon: "bi bi-bag-fill",
-      url: "/shop"
-    },
+      url: "/shop",
+      icon: "bi bi-bag-fill"
+    }
   ];
 
 

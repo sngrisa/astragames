@@ -38,7 +38,8 @@
                         "scripts": [
                             "node_modules/keen-slider/keen-slider.js",
                             "node_modules/swiper/swiper.min.js",
-                            "node_modules/jquery/dist/jquery.min.js"
+                            "node_modules/jquery/dist/jquery.min.js",
+                            "node_modules/sweetalert2/dist/sweetalert2.min.js"
                         ]
                     },
                     "configurations": {
@@ -108,7 +109,8 @@
                         "scripts": [
                             "node_modules/keen-slider/keen-slider.js",
                             "node_modules/swiper/swiper.min.js",
-                            "node_modules/jquery/dist/jquery.min.js"
+                            "node_modules/jquery/dist/jquery.min.js",
+                            "node_modules/sweetalert2/dist/sweetalert2.min.js"
                         ]
                     }
                 }

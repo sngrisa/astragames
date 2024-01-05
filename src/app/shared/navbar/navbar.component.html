@@ -21,7 +21,7 @@
 
             <!-- secondary nav -->
             <div class="hidden md:flex items-center space-x-1">
-                <app-loginitem [item]="itemLogin"></app-loginitem>
+                <app-loginitem *ngFor="let item of itemLogin; let i = index" [item]="item"></app-loginitem>
             </div>
 
             <!-- mobile button goes here -->
