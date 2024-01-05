@@ -53,7 +53,8 @@ export class RegisterFormComponent {
       title: "Usuario Creado Con Éxito",
       showConfirmButton: false,
       timer: 3000,
-      background: "black"
+      background: "black",
+      color: "white"
     });
   }
 
