@@ -1,0 +1,8 @@
+<div *ngIf="showSplash" [ngStyle]="{'opacity': opacityChange, 'transition': splashTransition}">
+    <section
+        class="app-splash-content fixed top-0 left-0 bottom-0 w-full h-screen z-50 overflow-hidden flex flex-col items-center justify-center bg-gray-900 text-white">
+        
+        <h1 class="astra-games"><img src="./../../../assets/logo.png" alt="astragames.png" class="image" /> {{title |
+            titlecase}}</h1>
+    </section>
+</div>

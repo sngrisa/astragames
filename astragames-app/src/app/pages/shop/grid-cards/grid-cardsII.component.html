@@ -1,0 +1,21 @@
+<h2 class="text-white text-center pt-4"><i class="bi bi-star-fill"></i> Mejor valorados</h2>
+<div class="container mx-auto">
+    <hr />
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 lg:grid-cols-6">
+        <app-cardsII *ngFor="let card of cards2; let i = index" [card]="card"></app-cardsII>
+    </div>
+</div>
+<h2 class="text-white text-center pt-4"><i class="bi bi-box2-heart-fill"></i> Más jugados</h2>
+<div class="container mx-auto">
+    <hr />
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 lg:grid-cols-6">
+        <app-cardsII *ngFor="let card of cards2; let i = index" [card]="card"></app-cardsII>
+    </div>
+</div>
+<h2 class="text-white text-center pt-4"><i class="bi bi-car-front-fill"></i> Proximos Estrenos</h2>
+<div class="container mx-auto">
+    <hr />
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 lg:grid-cols-6">
+        <app-cardsII *ngFor="let card of cards2; let i = index" [card]="card"></app-cardsII>
+    </div>
+</div>

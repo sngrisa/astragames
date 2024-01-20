@@ -1,0 +1,56 @@
+[{
+        "id": 1,
+        "name": "Bomberman",
+        "series": "Bomberman",
+        "url": "../../../../../assets/bomberman/bomberman.png"
+
+    },
+    {
+        "id": 2,
+        "name": "Bomberman 2",
+        "series": "Bomberman",
+        "url": "../../../../../assets/bomberman/bomberman2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Super Bomberman",
+        "series": "Bomberman",
+        "url": "./../../../../assets/bomberman/superbomberman.png"
+    },
+    {
+        "id": 4,
+        "name": "Super Bomberman 2",
+        "series": "Bomberman",
+        "url": "./../../../../assets/bomberman/superbomberman2.png"
+    },
+    {
+        "id": 5,
+        "name": "Super Bomberman 3",
+        "series": "Bomberman",
+        "url": "./../../../../assets/bomberman/superbomberman3.png"
+    },
+    {
+        "id": 6,
+        "name": "Super Bomberman 4",
+        "series": "Bomberman",
+        "url": "./../../../../assets/bomberman/superbomberman4.png"
+    },
+    {
+        "id": 7,
+        "name": "Super Bomberman 5",
+        "series": "Bomberman",
+        "url": "./../../../../assets/bomberman/superbomberman5.png"
+    },
+    {
+        "id": 8,
+        "name": "Mega Bomberman 93",
+        "series": "Bomberman",
+        "url": "./../../../../assets/bomberman/bomberman93.png"
+    },
+    {
+        "id": 9,
+        "name": "Mega Bomberman 94",
+        "series": "Bomberman",
+        "url": "./../../../../assets/bomberman/bomberman94.png"
+    }
+]

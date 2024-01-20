@@ -1,0 +1,22 @@
+<div class="container animate__animated animate__bounce">
+    <div class="title-bar">
+        <div (click)="onNoClick()">&times;</div>
+    </div>
+    <div class="content">
+        <section class="hero max-w-screen-lg mx-auto pb-2">
+            <img class="mx-auto img-logo" src="./../../assets/logo.png" alt="screenshot">
+            <h1 class="text-logo astra-games">ASTRA GAMES</h1>
+        </section>
+        <div class="form">
+            <input class="textfield" type="text" placeholder="Ingrese su correo" />
+            <input class="textfield" type="password" placeholder="Ingrese su contraseña" />
+            <div class="button-group"><button class="btn login" (click)="goToLogin()"><i class="bi bi-box-arrow-in-left"></i> Iniciar
+                    Sesión</button><button class="btn" (click)="onNoClick()"><i class="bi bi-x-circle-fill"></i>
+                    Cancelar</button></div><a class="forgot-password" href="#">Olvidaste tu contraseña?</a>
+            <hr class="separator" /><button class="btn" (click)="goToRegister()"><i class="bi bi-person-plus-fill"></i>
+                Crear Cuenta</button>
+            <hr class="separator" /><button class="btn"><i class="bi bi-google"></i> Crear Cuenta con Google</button>
+            <button class="btn"><i class="bi bi-facebook"></i> Crear Cuenta con Facebook</button>
+        </div>
+    </div>
+</div>

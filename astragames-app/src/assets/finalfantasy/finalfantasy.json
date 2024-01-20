@@ -1,0 +1,56 @@
+[{
+        "id": 1,
+        "name": "Final Fantasy",
+        "series": "Final Fantasy",
+        "url": "../../../../../assets/finalfantasy/ff1.png"
+
+    },
+    {
+        "id": 2,
+        "name": "Final Fantasy 2",
+        "series": "Final Fantasy",
+        "url": "../../../../../assets/finalfantasy/ff2.png"
+    },
+    {
+        "id": 3,
+        "name": "Final Fantasy 3",
+        "series": "Final Fantasy",
+        "url": "./../../../../assets/finalfantasy/ff3.png"
+    },
+    {
+        "id": 4,
+        "name": "Final Fantasy 4",
+        "series": "Final Fantasy",
+        "url": "./../../../../assets/finalfantasy/ffiv.png"
+    },
+    {
+        "id": 5,
+        "name": "Final Fantasy 5",
+        "series": "Final Fantasy",
+        "url": "./../../../../assets/finalfantasy/ffv.png"
+    },
+    {
+        "id": 6,
+        "name": "Final Fantasy 6",
+        "series": "Final Fantasy",
+        "url": "./../../../../assets/finalfantasy/ffvi.png"
+    },
+    {
+        "id": 7,
+        "name": "Final Fantasy 7",
+        "series": "Final Fantasy",
+        "url": "./../../../../assets/finalfantasy/ffvii.png"
+    },
+    {
+        "id": 8,
+        "name": "Final Fantasy 8",
+        "series": "Final Fantasy",
+        "url": "./../../../../assets/finalfantasy/ffviii.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Final Fantasy 9",
+        "series": "Final Fantasy",
+        "url": "./../../../../assets/finalfantasy/ffix.png"
+    }
+]

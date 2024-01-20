@@ -1,0 +1,29 @@
+h2 {
+    font-size: 20px;
+    font-weight: 300;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+.account-form {
+    margin: auto !important;
+    width: auto !important;
+    height: 850px !important;
+    padding-top: 2% !important;
+}
+
+@media (min-width: 768px) {
+    .account-form {
+        margin: auto !important;
+        width: 800px !important;
+        height: 850px !important;
+        padding-top: 2% !important;
+    }
+}

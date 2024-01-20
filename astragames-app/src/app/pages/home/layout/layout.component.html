@@ -1,0 +1,9 @@
+<div class="container my-24 mx-auto md:px-6 text-white">
+    <section class="mb-4 text-center">
+      <h2 class="text-center text-3xl font-bold"><i class="bi bi-newspaper"></i> Astra Games Noticias</h2>
+      <hr/>
+      <div class="grid gap-6 lg:grid-cols-3 xl:gap-x-12 pt-4">
+        <app-news *ngFor="let new of news; let i = index" [new]="new"></app-news>
+      </div>
+    </section>
+  </div>

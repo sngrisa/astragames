@@ -1,0 +1,25 @@
+<form autocapitalize="off" autocomplete="off" [formGroup]="formAccount" (ngSubmit)="submitAccount()">
+    <div class="text-center items-center bg-red-500 text-white text-sm font-bold px-4 py-3 error" role="alert"
+        *ngIf="getErrors('email')">
+        <span><i class="bi bi-bug-fill"></i> El email es incorrecto o no esta disponible, ingrese un email correcto!!!! <i class="bi bi-bug-fill"></i></span>
+    </div>
+    <input type="text" name="name" id="name" placeholder="Ingrese su email" required formControlName="email" />
+    <div class="text-center items-center bg-red-500 text-white text-sm font-bold px-4 py-3 mt-3 error" role="alert"
+        *ngIf="getErrors('username')">
+        <span><i class="bi bi-bug-fill"></i> El username es incorrecto o no esta disponible, ingrese un username correcto!!!! <i class="bi bi-bug-fill"></i></span>
+    </div>
+    <input type="text" name="name" id="name" placeholder="Ingrese un username" formControlName="username" />
+    <div class="text-center items-center bg-red-500 text-white text-sm font-bold px-4 py-3 error" role="alert"
+        *ngIf="getErrors('password')">
+        <span><i class="bi bi-bug-fill"></i> La contraseña no puede tener menos de 6 digitos y no puede ser debil, ingrese una contraseña correcta
+            porfavor!!!! <i class="bi bi-bug-fill"></i></span>
+    </div>
+    <input type="password" name="name" id="name" placeholder="Ingrese una contraseña" formControlName="password" />
+    <div class="text-center items-center bg-red-500 text-white text-sm font-bold px-4 py-3 error" role="alert"
+        *ngIf="getErrors('confirmPassword')">
+        <span><i class="bi bi-bug-fill"></i> Confirme la contraseña porfavor!!!! <i class="bi bi-bug-fill"></i></span>
+    </div>
+    <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirme la contraseña" formControlName="confirmPassword" />
+    <p>Al registrarse usted acepta nuestros términos y condiciones.</p>
+    <button class="button-register" type="submit"><i class="bi bi-plus-circle-fill"></i> Registrarse</button>
+</form>

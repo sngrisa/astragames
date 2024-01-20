@@ -1,0 +1,22 @@
+<footer class="background-footer">
+    <div class="container px-6 py-8 mx-auto">
+        <div class="flex flex-col items-center text-center">
+            <div>
+                <a [routerLink]="['/home']" class="flex items-center py-5 px-2 brand-img astra-games">
+                    <img src="./../../../assets/logo.png" alt="astra-games" class="img-logo-footer" />
+                    <span class="font-bold ml-3">ASTRA GAMES</span>
+                </a>
+            </div>
+            <div class="flex flex-wrap justify-center mt-6 -mx-4">
+                <app-items-menu *ngFor="let item of items; let i = index" [item]="item"></app-items-menu>
+            </div>
+        </div>
+        <hr class="my-6" />
+        <div class="flex flex-col items-center sm:flex-row sm:justify-between">
+            <p class="text-sm"><i class="bi bi-c-circle-fill"></i> {{getDate()}} Astra Software. Todos los derechos reservados</p>
+            <div class="flex -mx-2">
+                <app-socialitems *ngFor="let itemSocial of itemsSocial; let i = index" [socialItem]="itemSocial"></app-socialitems>
+            </div>
+        </div>
+    </div>
+</footer>
