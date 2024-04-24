@@ -4,6 +4,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { ShopComponent } from './pages/shop/shop.component';
+import { PasswordRecoveryComponent } from './pages/password-recovery/password-recovery.component';
 
 const routes: Routes = [
   { path: "home", component: HomeComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: "cart", loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule) },
   { path: "shop", component: ShopComponent },
   { path: "register", component: RegisterComponent },
+  { path: "recovery", component: PasswordRecoveryComponent },
   { path: "**", redirectTo: "home", pathMatch: "full" }
 ];
 

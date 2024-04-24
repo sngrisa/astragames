@@ -1,0 +1,15 @@
+<div class="container  animate__animated animate__bounce">
+  <div class="flex justify-center">
+    <form autocapitalize="off" autocomplete="off" [formGroup]="formRecovery" (ngSubmit)="submitAccount()">
+      <div class="text-center items-center bg-red-500 text-white text-sm font-bold px-4 py-3 error" role="alert"
+        *ngIf="getErrors('email')">
+        <span><i class="bi bi-bug-fill"></i> El email es incorrecto o no esta disponible, ingrese un email correcto!!!!
+          <i class="bi bi-bug-fill"></i></span>
+      </div>
+      <input type="text" name="name" id="name" placeholder="Ingrese su email" required formControlName="email" />
+      <p>Revise si recibe un email para recuperar su contraseña, a veces puede que lo reciba en la carpeta spam</p>
+      <button class="button-register" type="submit"><i class="bi bi-plus-circle-fill"></i> Recuperar contraseña
+      </button>
+    </form>
+  </div>
+</div>

@@ -23,14 +23,19 @@ export class LoginComponent {
   }
 
   goToLogin = () => {
-    this.usersService.getUsers().subscribe((resp: any)=> {
-      if(resp==201){
+    this.usersService.getUsers().subscribe((resp: any) => {
+      if (resp == 201) {
         this.getNotification();
         this.nativeByRoute.navigateByUrl("/home");
-      }else{
+      } else {
         this.errNotification();
       }
     });
+  }
+
+  goToRecovery = () => {
+    this.nativeByRoute.navigateByUrl("/recovery");
+    this.dialogRef.closeAll();
   }
 
   getNotification = (): void => {

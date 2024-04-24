@@ -19,8 +19,8 @@ export class LayoutComponent {
       },
       {
         id: 2,
-        name: "Prosap",
-        desc: "Prosap apoya al desarrollo de Astra Games, con recursos de la provincia de Cordoba, para crear una plataforma para todo el mundo",
+        name: "Coincactus",
+        desc: "Creamos nuestra propia moneda virtual",
         urlImg: "https://prensa.cba.gov.ar/wp-content/uploads/2022/09/ASUNCION-DE-LOS-NUEVOS-MINISTROS-1938.jpg",
         date: "27-06-1994"
       },

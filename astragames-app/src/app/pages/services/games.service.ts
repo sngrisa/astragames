@@ -12,7 +12,7 @@ export class GamesService {
     constructor(private http: HttpClient) { }
 
     getGames = (game: string): Observable<Game[]> => {
-        return this.http.get<Game[]>(`../assets/${game}/${game}.json`);
+        return this.http.get<Game[]>(`./assets/${game}/${game}.json`);
     }
 
 }

@@ -29,6 +29,8 @@ import { UsersService } from './backend/services/users.service';
 import { ProductComponent } from './shop/product/product.component';
 import { ProductImageComponent } from './shop/product/product-image/product-image.component';
 import { QuotesComponent } from './shop/product/quotes/quotes.component';
+import { PasswordRecoveryComponent } from './password-recovery/password-recovery.component';
+import { RecoveryFormComponent } from './password-recovery/recovery-form/recovery-form.component';
 
 
 
@@ -57,7 +59,9 @@ import { QuotesComponent } from './shop/product/quotes/quotes.component';
     CartDetailsComponent,
     ProductComponent,
     ProductImageComponent,
-    QuotesComponent
+    QuotesComponent,
+    PasswordRecoveryComponent,
+    RecoveryFormComponent
   ],
   imports: [
     CommonModule,
@@ -73,7 +77,9 @@ import { QuotesComponent } from './shop/product/quotes/quotes.component';
   exports: [
     HomeComponent,
     AboutComponent,
-    LoadingComponent
+    LoadingComponent,
+    PasswordRecoveryComponent,
+    RecoveryFormComponent
   ]
 })
 export class PagesModule { }
