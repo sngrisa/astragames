@@ -31,6 +31,9 @@ import { ProductImageComponent } from './shop/product/product-image/product-imag
 import { QuotesComponent } from './shop/product/quotes/quotes.component';
 import { PasswordRecoveryComponent } from './password-recovery/password-recovery.component';
 import { RecoveryFormComponent } from './password-recovery/recovery-form/recovery-form.component';
+import { HeroComponent } from './home/hero/hero.component';
+import { ProsAndConsComponent } from './home/pros-and-cons/pros-and-cons.component';
+import { ItemPosConsComponent } from './home/pros-and-cons/item-pos-cons/item-pos-cons.component';
 
 
 
@@ -61,7 +64,10 @@ import { RecoveryFormComponent } from './password-recovery/recovery-form/recover
     ProductImageComponent,
     QuotesComponent,
     PasswordRecoveryComponent,
-    RecoveryFormComponent
+    RecoveryFormComponent,
+    HeroComponent,
+    ProsAndConsComponent,
+    ItemPosConsComponent
   ],
   imports: [
     CommonModule,
@@ -79,7 +85,8 @@ import { RecoveryFormComponent } from './password-recovery/recovery-form/recover
     AboutComponent,
     LoadingComponent,
     PasswordRecoveryComponent,
-    RecoveryFormComponent
+    RecoveryFormComponent,
+    ItemPosConsComponent
   ]
 })
 export class PagesModule { }

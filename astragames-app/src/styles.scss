@@ -1,5 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html,
+body {
+  height: 100%;
+}
+
+.text-gold {
+  color: ghostwhite !important;
+  font-weight: bolder !important;
+}
+
+.bg-black-late {
+  background-color: black;
+}
+
+.bg-menu-button {
+  background-color: transparent !important;
+}

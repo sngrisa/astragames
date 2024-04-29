@@ -1,44 +1,42 @@
 <nav class="navbar">
-    <div class="max-w-6xl mx-auto px-4">
-        <div class="flex justify-between">
-            <div class="flex space-x-12">
-                <!-- logo -->
-                <div>
-                    <a [routerLink]="['/home']" class="flex items-center py-5 px-2 brand-img astra-games">
-                        <img src="./../../../assets/logo.png" alt="img-logo" />
-                        <span class="font-bold ml-3">{{title | uppercase}}</span>
-                    </a>
-                </div>
-
-                <!-- primary nav -->
-                <div class="hidden md:flex items-center space-x-1 navigation">
-                    <ul>
-                        <app-menu-items *ngFor="let item of items; let i = index" [item]="item"></app-menu-items>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- secondary nav -->
-            <div class="hidden md:flex items-center space-x-1">
-                <app-loginitem *ngFor="let item of itemLogin; let i = index" [item]="item"></app-loginitem>
-            </div>
-
-            <!-- mobile button goes here -->
-            <div class="md:hidden flex items-center">
-                <button class="mobile-menu-button">
-                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                </button>
-            </div>
-
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="flex justify-between">
+      <div class="flex space-x-12">
+        <!-- logo -->
+        <div>
+          <a [routerLink]="['/home']" class="flex items-center py-5 px-2 brand-img astra-games">
+            <img src="./../../../assets/logo.png" alt="img-logo" />
+            <span class="font-bold ml-3">{{title | uppercase}}</span>
+          </a>
         </div>
-    </div>
 
-    <!-- mobile menu -->
-    <div class="mobile-menu hidden md:hidden">
-        <app-menu-items *ngFor="let item of items; let i = index" [item]="item"></app-menu-items>
+        <!-- primary nav -->
+        <div class="hidden md:flex items-center space-x-1 navigation">
+          <ul>
+            <app-menu-items *ngFor="let item of items; let i = index" [item]="item"></app-menu-items>
+          </ul>
+        </div>
+      </div>
+
+      <!-- secondary nav -->
+      <div class="hidden md:flex items-center space-x-1 align-items: items-end;">
+        <app-loginitem *ngFor="let item of itemLogin; let i = index" [item]="item"></app-loginitem>
+      </div>
+
+      <!-- mobile button goes here -->
+      <div class="md:hidden flex items-center">
+        <button class="mobile-menu-button">
+          <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+
     </div>
+  </div>
+
+  <!-- mobile menu -->
+  <div class="mobile-menu hidden md:hidden">
+    <app-menu-items *ngFor="let item of items; let i = index" [item]="item"></app-menu-items>
+  </div>
 </nav>

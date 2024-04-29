@@ -1,0 +1,15 @@
+<div class="mb-12 lg:mb-0 mt-20 card-pro">
+  <div class="block h-full rounded-lg bg-black">
+    <div class="flex justify-center">
+      <div class="mt-8 inline-block rounded-full bg-primary-100 p-4 text-primary shadow-md">
+        <i [class]="pro.icon" id="icon-pro"></i>
+      </div>
+    </div>
+    <div class="p-6">
+      <h5 class="mb-4 text-lg font-semibold" id="title-pro">{{pro.name | uppercase}}</h5>
+      <p class="text-white text-pro">
+        {{pro.description}}
+      </p>
+    </div>
+  </div>
+</div>
